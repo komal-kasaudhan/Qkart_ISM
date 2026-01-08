@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item
+    android:id="@+id/admin_nav_dashboard"
+    android:icon="@drawable/home_24px"
+    android:title="Dashboard" />
+
+<item
+    android:id="@+id/admin_nav_orders"
+    android:icon="@drawable/notifications"
+    android:title="New Orders" />
+
+<item
+    android:id="@+id/admin_nav_reports"
+    android:icon="@drawable/outline_leaderboard"
+    android:title="Reports" />
+
+</menu>

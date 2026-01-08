@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvOrderId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#ORD-5542"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvOrderPlacedAt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Placed at: 04:15 PM"
+                    android:textColor="#757575"
+                    android:textSize="11sp" />
+
+                <LinearLayout
+                    android:id="@+id/layoutDeliveryTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="#FFEBEE"
+                    android:paddingHorizontal="6dp"
+                    android:paddingVertical="2dp"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+                    <TextView
+                        android:id="@+id/tvDeliveryTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Deliver at: 07:30 PM"
+                        android:textColor="#D32F2F"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvOrderStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="#FFF3E0"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:text="PREPARING"
+                android:textColor="#E65100"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvCustomerName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Rahul Sharma"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvUserOrderCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#E8F5E9"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="2dp"
+                android:text="4th Order"
+                android:textColor="#2E7D32"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="12dp"
+            android:background="#EEEEEE" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ITEMS TO PACK:"
+            android:textColor="#9E9E9E"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="150dp"
+            android:layout_marginTop="5dp"
+            android:background="#FAFAFA"
+            android:padding="4dp">
+
+            <LinearLayout
+                android:id="@+id/layoutItemsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/layoutExpandableDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#F5F5F5"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvFullAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hostel: Tandon, Room: 302"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+                <TextView
+                    android:id="@+id/tvAllPhones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Primary: 9876543210"
+                    android:textColor="#1565C0"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/btnCallPrimary"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@android:drawable/ic_menu_call"
+                    app:tint="#2E7D32" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tvTotalPaid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="end"
+                android:text="Total Amount: ₹450"
+                android:textColor="#B71C1C"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnSeeDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="See Delivery Details ▼"
+            android:textColor="#2196F3"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnUpdateStatus"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:backgroundTint="#2E7D32"
+            android:text="UPDATE STATUS"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:cornerRadius="10dp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

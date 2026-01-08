@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginTop="40dp"
+    android:background="?android:attr/windowBackground">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="?android:attr/colorBackground"
+        app:cardCornerRadius="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="30dp"
+            android:paddingHorizontal="16dp">
+
+            <ImageView
+                android:id="@+id/img_orders_back"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_back"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:tint="?android:attr/textColorPrimary" />
+
+            <TextView
+                android:id="@+id/tvOrderShopName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Shop Orders"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:paddingHorizontal="8dp"
+        android:weightSum="2">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="3dp"
+            app:cardBackgroundColor="@color/stats_blue_bg">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvTotalOrdersCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#1565C0"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active Orders"
+                    android:textSize="12sp"
+                    android:textColor="#1565C0"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="3dp"
+            app:cardBackgroundColor="@color/stats_green_bg">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvTodayRevenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹0"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#2E7D32"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active Revenue"
+                    android:textSize="12sp"
+                    android:textColor="#2E7D32"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LIVE ORDER QUEUE"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#9E9E9E"
+        android:letterSpacing="0.1"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_admin_orders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="4dp"
+        tools:listitem="@layout/layout_item_order_admin"
+        android:paddingHorizontal="4dp"
+        android:clipToPadding="false" />
+
+</LinearLayout>

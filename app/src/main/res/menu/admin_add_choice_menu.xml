@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add_regular"
+        android:title="Add Regular Item"
+        android:icon="@drawable/ic_menu" /> <item
+    android:id="@+id/add_special"
+    android:title="Add Special Combo"
+    android:icon="@drawable/star_fill" />
+</menu>

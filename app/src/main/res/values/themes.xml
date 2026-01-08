@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Qkart" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+
+    <style name="Theme.Qkart" parent="Base.Theme.Qkart" />
+
+    <style name="CircleImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="RoundedTopCorners">
+        <item name="cornerSizeTopLeft">15dp</item>
+        <item name="cornerSizeTopRight">15dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <style name="RoundedCornersImage">
+        <item name="cornerSize">16dp</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="colorPrimary">@color/admin_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+    </style>
+
+    <style name="RoundedSquare" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">15dp</item>
+    </style>
+    <style name="Theme.YourAppName" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/brand_green</item>
+        <item name="colorSurface">@color/light_grey_bg</item>
+        <item name="colorOnSurface">#1B1B1B</item> </style>
+</resources>

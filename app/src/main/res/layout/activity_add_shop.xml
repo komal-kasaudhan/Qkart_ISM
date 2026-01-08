@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
+  >
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        app:cardBackgroundColor="?attr/colorSurface"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="0dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:paddingHorizontal="20dp">
+
+            <TextView
+                android:id="@+id/tv_admin_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Restaurant"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-medium"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/img_home"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/home_24px"
+                android:padding="4dp"
+                app:tint="#2E7D32"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/header_bar"
+        app:layout_constraintBottom_toTopOf="@id/btn_save_all">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_image_picker"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:strokeWidth="0dp">---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/img_shop_preview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/add_a_photo" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#20000000" />
+                </FrameLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="?attr/colorSurface">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <EditText
+                        android:id="@+id/et_shop_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:hint="Restaurant Name"
+                        android:background="@drawable/minimal_field_bg"
+                        android:paddingHorizontal="16dp"
+                        android:textColor="?attr/colorOnSurface"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/et_shop_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="12dp"
+                        android:hint="Tagline/Short Description"
+                        android:background="@drawable/minimal_field_bg"
+                        android:gravity="top"
+                        android:padding="12dp"
+                        android:textColor="?attr/colorOnSurface"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_shop_rating"
+                            android:layout_width="0dp"
+                            android:layout_height="52dp"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="6dp"
+                            android:hint="Rating ⭐"
+                            android:inputType="numberDecimal"
+                            android:background="@drawable/minimal_field_bg"
+                            android:textSize="14sp"
+                            android:paddingHorizontal="16dp" />
+
+                        <EditText
+                            android:id="@+id/et_prep_time"
+                            android:layout_width="0dp"
+                            android:layout_height="52dp"
+                            android:layout_weight="1"
+                            android:layout_marginStart="6dp"
+                            android:hint="Prep Time(mins)"
+                            android:inputType="text"
+                            android:background="@drawable/minimal_field_bg"
+                            android:textSize="14sp"
+                            android:paddingHorizontal="16dp" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/et_shop_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginTop="12dp"
+                        android:hint="Shop Timings (ex: 9AM-11PM)"
+                        android:background="@drawable/minimal_field_bg"
+                        android:paddingHorizontal="16dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ll_status_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="?attr/colorSurface">
+
+                <LinearLayout
+                    android:id="@+id/ll_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="16dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Operational Status"
+                        android:textSize="15sp"
+                        android:textColor="?attr/colorOnSurface"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <com.google.android.material.materialswitch.MaterialSwitch
+                        android:id="@+id/switch_shop_open"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="48dp"
+                        android:minHeight="48dp"
+                        app:thumbTint="#2E7D32"
+                        app:trackTint="#C8E6C9"
+                        app:trackDecorationTint="#2E7D32" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_save_all"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="UPDATE INFO"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-black"
+        android:backgroundTint="#2E7D32"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="16dp"
+        app:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

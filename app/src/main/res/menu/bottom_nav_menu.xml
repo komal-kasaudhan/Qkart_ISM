@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item
+    android:id="@+id/nav_home"
+    android:icon="@drawable/home_24px"
+    android:title="Home" />
+<item
+    android:id="@+id/nav_orders"
+    android:icon="@drawable/outline_add_shopping_cart_24"
+    android:title="Your Orders" />
+<item
+    android:id="@+id/nav_coins"
+android:icon="@drawable/currency_rupee_circle_24px"
+android:title="Earn Coins" />
+
+</menu>

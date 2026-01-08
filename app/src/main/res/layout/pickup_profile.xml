@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentCard"
+    android:layout_width="230dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="?attr/colorSurface"> <LinearLayout
+    android:id="@+id/layoutBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="14dp"
+    app:strokeWidth="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/llActions"
+            android:text="Esha"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/llActions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivEditProfile"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/outline_leaderboard"
+                app:tint="?attr/colorOnSurfaceVariant" />
+
+            <ImageView
+                android:id="@+id/ivDeleteProfile"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_delete"
+                app:tint="@color/design_default_color_error" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvProfileHostel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Rosaline Hostel, Room 102"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="8dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Primary: "
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tvProfilePhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:text="9876543210"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alt: "
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tvAltPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:text="7001234567"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSelectedTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="6dp"
+        android:text="● SELECTED"
+        android:textColor="@color/accent_green"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</LinearLayout>
+</com.google.android.material.card.MaterialCardView>

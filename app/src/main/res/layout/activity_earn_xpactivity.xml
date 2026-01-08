@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="45dp"
+    android:background="?android:attr/windowBackground"
+    android:padding="20dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="#6200EE"
+        android:layout_marginBottom="25dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✨ Q-KART REWARDS ✨"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="15dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_xp_gradient"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@android:drawable/btn_star_big_on"
+                app:tint="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tvTotalXP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000 XP"
+                android:textColor="#FFFFFF"
+                android:textSize="45sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCashValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Value: ₹0.00"
+                android:textColor="#F5F5F5"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Diamond Membership Goal 💎"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="?android:attr/textColorPrimary"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="?attr/colorSurface"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ProgressBar
+                android:id="@+id/pbDiamond"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:max="1000"
+                android:progress="0"
+                android:progressTint="#00B0FF"/>
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Earn 1000 XP to unlock Diamond Perks!"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Quick Tips:"
+        android:textStyle="bold"
+        android:textColor="#FF9800"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="🔥 Order for ₹100 and get 10 XP instantly!\n💎 Diamond members get 2x faster XP."
+        android:textColor="?android:attr/textColorSecondary"
+        android:lineSpacingExtra="5dp"/>
+
+</LinearLayout>

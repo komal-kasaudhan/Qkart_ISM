@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardBackgroundColor="?attr/colorSurface"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="5dp"
+    app:strokeColor="#EEEEEE"
+    android:elevation="10dp"
+    app:strokeWidth="1dp">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_item_name_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paneer Tikka"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:id="@+id/tv_item_desc_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Spicy grilled cottage cheese with peppers"
+            android:textColor="#808080"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_item_price_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="₹240"
+            android:textColor="#4CAF50"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_item_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="Available "
+            android:textColor="#4CAF50"
+            android:textSize="11sp"
+            app:thumbTint="#000000" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="12dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_item_admin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/add_a_photo"
+            app:shapeAppearanceOverlay="@style/RoundedTopCorners" /> <TextView
+        android:id="@+id/tv_item_offer_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-2dp"
+        android:background="@drawable/rating_pill_green"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="4dp"
+        android:text="20% OFF"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:elevation="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/btn_edit_item"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/circle_bg_white"
+                android:padding="6dp"
+                android:src="@drawable/outline_leaderboard"
+                app:tint="#000000"
+                android:elevation="2dp"/>
+
+            <ImageView
+                android:id="@+id/btn_delete_item"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/circle_bg_white"
+                android:padding="6dp"
+                android:src="@drawable/ic_delete"
+                app:tint="#D32F2F"
+                android:elevation="2dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

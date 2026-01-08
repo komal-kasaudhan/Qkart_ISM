@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Qkart" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+
+                <item name="colorPrimary">@color/primaryColorDark</item>
+                <item name="colorPrimaryVariant">@color/primaryColorDark</item>
+                <item name="colorOnPrimary">@color/onPrimaryColorDark</item>
+                <item name="android:statusBarColor">?attr/colorPrimary</item>
+                <item name="android:windowBackground">@drawable/splash_background_dark</item>
+
+            <item name="colorSurface">@color/dark_grey_bg</item>
+            <item name="colorOnSurface">#FFFFFF</item>
+
+    </style>
+</resources>
