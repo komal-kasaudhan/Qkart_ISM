@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="off_white">#F5F5F5</color>
+    <color name="divider_color">#EEEEEE</color>
+
+    <color name="primary">#FF5722</color>
+    <color name="primary_variant">#E64A19</color>
+    <color name="secondary">#FFCCBC</color>
+    <color name="qkart_green">#4CAF50</color>
+    <color name="qkart_green_light">#E8F5E9</color>
+    <color name="qkart_bg_soft">#FDF7FA</color>
+
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="gray_text">#757575</color>
+    <color name="dark_text">#212121</color>
+
+    <color name="admin_primary">#1A237E</color>
+    <color name="admin_accent">#FF6F00</color>
+    <color name="admin_background">#EEEEEE</color>
+    <color name="admin_card_bg">#FFFFFF</color>
+    <color name="admin_status_new">#D32F2F</color>
+    <color name="admin_status_green">#4CAF50</color>
+    <color name="admin_text_dark">#000000</color>
+    <color name="admin_text_light">#FFFFFF</color>
+
+    <color name="orange_light">#FF8A65</color>
+    <color name="dark_blue">#0047AB</color>
+    <color name="accent_orange">#FF5733</color>
+    <color name="accent_green">#2E7D32</color>
+
+    <color name="admin_dark_bg">#121212</color>
+    <color name="admin_primary_dark">#1F1F1F</color>
+    <color name="admin_accent_rich">#FF9800</color>
+    <color name="admin_hint_dark">#AAAAAA</color>
+    <color name="bg_color">#F8F9FA</color>
+
+    <color name="card_bg">#FFFFFF</color>
+    <color name="screen_background">#F5F5F5</color>
+
+    <color name="header_background">#FFFFFF</color>
+    <color name="splash_bottom_blue">#1A3C5A</color>
+
+    <color name="splash_top_yellow">#FFC107</color>
+    <color name="splash_text_yellow">#FFD54F</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="primaryColorDark">#FF9800</color>
+    <color name="onPrimaryColorDark">#000000</color>
+
+
+
+    <color name="stats_blue_bg">#E3F2FD</color>  <color name="stats_green_bg">#E8F5E9</color> <color name="stats_blue_text">#1565C0</color>
+    <color name="stats_green_text">#2E7D32</color>
+
+    <color name="status_pending_bg">#FFF3E0</color>
+    <color name="status_pending_text">#E65100</color>
+    <color name="brand_green">#2E7D32</color>
+    <color name="light_grey_bg">#F8F9FA</color>
+    <color name="dark_grey_bg">#121212</color>
+
+</resources>
